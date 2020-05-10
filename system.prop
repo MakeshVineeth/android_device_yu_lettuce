@@ -127,7 +127,7 @@ wifi.interface=wlan0
 ro.fusion.magfield.max=250
 
 # Set Security Patch Manually
-ro.build.version.security_patch=2020-03-05
+ro.build.version.security_patch=2020-04-05
 ro.lineage.build.vendor_security_patch=2016-05-01
 
 # Disable notification while adb is active
