@@ -160,9 +160,6 @@ TARGET_KERNEL_SOURCE := kernel/cyanogen/msm8916
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
 
-# LineageHW
-BOARD_HARDWARE_CLASS += $(DEVICE_PATH)/lineagehw
-
 # HIDL
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 
