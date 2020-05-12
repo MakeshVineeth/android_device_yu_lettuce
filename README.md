@@ -1,6 +1,6 @@
 Device Tree for the [YU Yuphoria](https://www.gsmarena.com/yu_yuphoria-7241.php) (Lettuce)
 ==========================================
-This is **Oreo Tree** for LineageOS. Forked from lettuce-oreo by ghostrider-reborn.
+This is **Oreo Tree** for LineageOS. Forked from lettuce-oreo by [ghostrider-reborn](https://github.com/ghostrider-reborn/).
 
 The YU Yuphoria YU5010/5010A (codenamed _"lettuce"_) is a mid-range smartphone from YU Televentures.  
 It was announced in May 2015.
