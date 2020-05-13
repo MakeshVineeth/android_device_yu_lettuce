@@ -335,7 +335,6 @@ GAPPS_PRODUCT_PACKAGES += \
     CarrierServices \
     Turbo \
     GoogleContacts \
-    GoogleContactsSyncAdapter \
     GoogleDialer \
     LatinImeGoogle \
     GoogleWebViewOverlay \
