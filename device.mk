@@ -333,7 +333,6 @@ WITH_DEXPREOPT := true
 
 GAPPS_PRODUCT_PACKAGES += \
     CarrierServices \
-    SoundPicker \
     Turbo \
     GoogleContacts \
     GoogleContactsSyncAdapter \
