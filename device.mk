@@ -352,3 +352,8 @@ GAPPS_PRODUCT_PACKAGES += \
     Wallpapers
 
 $(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
+
+# Custom Apps
+
+PRODUCT_PACKAGES += \
+    F-DroidPrivilegedExtension
