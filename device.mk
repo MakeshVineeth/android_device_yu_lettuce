@@ -343,6 +343,8 @@ GAPPS_PRODUCT_PACKAGES += \
     LatinImeGoogle \
     GoogleWebViewOverlay \
     WebViewGoogle \
+    PixelLauncher \
+    PixelLauncherIcons \
     PrebuiltBugle \
     PrebuiltDeskClockGoogle \
     PrebuiltGmail \
@@ -354,5 +356,4 @@ $(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
 # Custom Apps
 
 PRODUCT_PACKAGES += \
-    F-DroidPrivilegedExtension  \
-    Launcher3
+    F-DroidPrivilegedExtension
