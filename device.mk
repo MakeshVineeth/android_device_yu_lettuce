@@ -336,7 +336,6 @@ GAPPS_PRODUCT_PACKAGES += \
     SoundPicker \
     Turbo \
     MarkupGoogle \
-    DigitalWellbeing \
     GoogleContacts \
     GoogleContactsSyncAdapter \
     GoogleDialer \
