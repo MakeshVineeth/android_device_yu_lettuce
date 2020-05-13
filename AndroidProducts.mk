@@ -14,7 +14,7 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage.mk
+    $(LOCAL_DIR)/lineage_lettuce.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_lettuce-userdebug
+    lineage_lettuce
