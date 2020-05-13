@@ -229,5 +229,8 @@ WIFI_DRIVER_FW_PATH_AP := "ap"
 WIFI_DRIVER_FW_PATH_STA := "sta"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
+# Exclude missing depencies
+ALLOW_MISSING_DEPENDENCIES := TRUE
+
 # Inherit from proprietary files
 include vendor/yu/lettuce/BoardConfigVendor.mk
