@@ -14,7 +14,11 @@
 # limitations under the License.
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, device/yu/lettuce/full_lettuce.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
+# Inherit from lettuce device
+$(call inherit-product, device/yu/lettuce/device.mk)
 
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
@@ -29,6 +33,9 @@ TARGET_BOARD_PLATFORM_VARIANT := msm8916
 PRODUCT_NAME := lineage_lettuce
 BOARD_VENDOR := yu
 PRODUCT_DEVICE := lettuce
+PRODUCT_BRAND := YU
+PRODUCT_MODEL := YU5010
+PRODUCT_MANUFACTURER := YU
 
 TARGET_BOOT_ANIMATION_RES := 720
 PRODUCT_GMS_CLIENTID_BASE := android-micromax
