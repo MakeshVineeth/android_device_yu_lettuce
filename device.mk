@@ -333,22 +333,18 @@ WITH_DEXPREOPT := true
 
 GAPPS_PRODUCT_PACKAGES += \
     CarrierServices \
-    Turbo \
     GoogleContacts \
     GoogleDialer \
     LatinImeGoogle \
-    GoogleWebViewOverlay \
     WebViewGoogle \
-    PixelLauncher \
-    PixelLauncherIcons \
     PrebuiltBugle \
     PrebuiltDeskClockGoogle \
     PrebuiltGmail \
-    StorageManagerGoogle \
     Wallpapers
 
 GAPPS_EXCLUDED_PACKAGES := \
-    GoogleCalendarSyncAdapter
+    GoogleCalendarSyncAdapter \
+    GoogleTTS
 
 $(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
 
