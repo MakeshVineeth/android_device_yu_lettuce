@@ -327,8 +327,6 @@ GAPPS_FORCE_PACKAGE_OVERRIDES := true
 GAPPS_FORCE_WEBVIEW_OVERRIDES := true
 GAPPS_FORCE_MMS_OVERRIDES := true
 GAPPS_FORCE_DIALER_OVERRIDES := true
-GAPPS_FORCE_PIXEL_LAUNCHER := true
-GAPPS_FORCE_MATCHING_DPI := true
 WITH_DEXPREOPT := true
 
 GAPPS_PRODUCT_PACKAGES += \
@@ -343,7 +341,9 @@ GAPPS_PRODUCT_PACKAGES += \
 GAPPS_EXCLUDED_PACKAGES := \
     GoogleCalendarSyncAdapter \
     GoogleTTS \
-    GoogleContactsSyncAdapter
+    GoogleContactsSyncAdapter \
+    PixelLauncherIcons \
+    PixelLauncher
 
 $(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
 
