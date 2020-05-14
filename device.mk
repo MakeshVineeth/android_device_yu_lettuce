@@ -321,29 +321,6 @@ PRODUCT_COPY_FILES += \
 # Call the proprietary setup
 $(call inherit-product, vendor/yu/lettuce/lettuce-vendor.mk)
 
-# Open Gapps Preinclude
-GAPPS_VARIANT := pico
-GAPPS_FORCE_PACKAGE_OVERRIDES := true
-GAPPS_FORCE_WEBVIEW_OVERRIDES := true
-GAPPS_FORCE_MMS_OVERRIDES := true
-GAPPS_FORCE_DIALER_OVERRIDES := true
-
-GAPPS_PRODUCT_PACKAGES += \
-    GoogleContacts \
-    GoogleDialer \
-    WebViewGoogle \
-    PrebuiltBugle \
-    PrebuiltDeskClockGoogle \
-    PrebuiltGmail \
-    Wallpapers
-
-GAPPS_EXCLUDED_PACKAGES := \
-    GoogleCalendarSyncAdapter \
-    GoogleTTS \
-    GoogleContactsSyncAdapter \
-    PixelLauncherIcons \
-    PixelLauncher
-
 # Custom Apps
 
 PRODUCT_PACKAGES += \
