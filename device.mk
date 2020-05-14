@@ -342,7 +342,8 @@ GAPPS_PRODUCT_PACKAGES += \
 
 GAPPS_EXCLUDED_PACKAGES := \
     GoogleCalendarSyncAdapter \
-    GoogleTTS
+    GoogleTTS \
+    GoogleContactsSyncAdapter
 
 $(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
 
