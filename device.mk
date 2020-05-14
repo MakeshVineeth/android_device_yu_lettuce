@@ -347,6 +347,9 @@ GAPPS_PRODUCT_PACKAGES += \
     StorageManagerGoogle \
     Wallpapers
 
+GAPPS_EXCLUDED_PACKAGES := \
+    GoogleCalendarSyncAdapter
+
 $(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
 
 # Custom Apps
