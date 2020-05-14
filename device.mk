@@ -332,10 +332,8 @@ GAPPS_FORCE_MATCHING_DPI := true
 WITH_DEXPREOPT := true
 
 GAPPS_PRODUCT_PACKAGES += \
-    CarrierServices \
     GoogleContacts \
     GoogleDialer \
-    LatinImeGoogle \
     WebViewGoogle \
     PrebuiltBugle \
     PrebuiltDeskClockGoogle \
