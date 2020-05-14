@@ -325,5 +325,3 @@ $(call inherit-product, vendor/yu/lettuce/lettuce-vendor.mk)
 
 PRODUCT_PACKAGES += \
     F-DroidPrivilegedExtension
-
-$(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
