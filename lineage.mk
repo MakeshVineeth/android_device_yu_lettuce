@@ -37,11 +37,14 @@ PRODUCT_MANUFACTURER := YU
 
 # Set Security Patch Manually
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.lineage.build.vendor_security_patch=2016-05-01
-    ro.build.version.security_patch=2020-05-05
-    ro.build.fingerprint=$(BUILD_FINGERPRINT)
-    ro.system.build.fingerprint=$(BUILD_FINGERPRINT)
-    ro.vendor.build.fingerprint=$(BUILD_FINGERPRINT)
+    ro.lineage.build.vendor_security_patch=2016-05-01 \
+    ro.build.version.security_patch=2020-05-05 \
+    ro.build.fingerprint=$(BUILD_FINGERPRINT) \
+    ro.system.build.fingerprint=$(BUILD_FINGERPRINT) \
+    ro.vendor.build.fingerprint=$(BUILD_FINGERPRINT) \
+    ro.product.model=Pixel 3 \
+    ro.product.name=blueline \
+    ro.product.device=blueline \
 
 TARGET_VENDOR_PRODUCT_NAME := YUPHORIA
 TARGET_VENDOR_DEVICE_NAME := YUPHORIA
@@ -49,9 +52,7 @@ TARGET_BOOT_ANIMATION_RES := 720
 PRODUCT_GMS_CLIENTID_BASE := android-micromax
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-	PRIVATE_BUILD_DESC="YUPHORIA-user $(PLATFORM_VERSION) $(BUILD_ID) MMXMR1 release-keys" \
-    PRODUCT_NAME=YUPHORIA \
-    TARGET_DEVICE=YUPHORIA
+	PRIVATE_BUILD_DESC="YUPHORIA-user $(PLATFORM_VERSION) $(BUILD_ID) MMXMR1 release-keys"
 
 BUILD_FINGERPRINT=YU/YUPHORIA/YUPHORIA:5.1.1/LMY49J/YOG4PAS8A8:user/release-keys
 
