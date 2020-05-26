@@ -102,6 +102,10 @@ ro.core_ctl_min_cpu=0
 ro.core_ctl_max_cpu=4
 sys.use_fifo_ui=1
 
+# Touch response
+persist.vendor.qti.inputopts.enable=true
+persist.vendor.qti.inputopts.movetouchslop=0.6
+
 # Wi-Fi
 wifi.interface=wlan0
 
