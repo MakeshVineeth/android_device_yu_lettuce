@@ -70,6 +70,8 @@ ro.com.google.clientidbase.ms=android-micromax
 ro.com.google.clientidbase.yt=android-micromax
 
 # Radio
+persist.data.netmgrd.qos.enable=true
+persist.data.target=dpm1
 persist.data.target=dpm1
 persist.radio.aosp_usr_pref_sel=true
 persist.radio.custom_ecc=1
@@ -87,6 +89,7 @@ rild.libargs=-d /dev/smd0
 ro.telephony.default_network=9,9
 persist.data.qmi.adb_logmask=0
 ro.telephony.call_ring.multiple=false
+ro.config.always_show_roaming=true
 
 # Media
 drm.service.enabled=1
