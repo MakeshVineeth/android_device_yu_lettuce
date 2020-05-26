@@ -35,6 +35,10 @@ PRODUCT_BRAND := YU
 PRODUCT_MODEL := YU5010
 PRODUCT_MANUFACTURER := YU
 
+TARGET_VENDOR_PRODUCT_NAME := YUPHORIA
+TARGET_VENDOR_DEVICE_NAME := YUPHORIA
+TARGET_BOOT_ANIMATION_RES := 720
+
 # Set Security Patch Manually
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.lineage.build.vendor_security_patch=2016-05-01 \
@@ -45,10 +49,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.product.model=Pixel 3 \
     ro.product.name=blueline \
     ro.product.device=blueline \
+    ro.product.brand=Google \
+    ro.product.manufacturer=Google \
+    ro.opa.eligible_device=true
 
-TARGET_VENDOR_PRODUCT_NAME := YUPHORIA
-TARGET_VENDOR_DEVICE_NAME := YUPHORIA
-TARGET_BOOT_ANIMATION_RES := 720
 PRODUCT_GMS_CLIENTID_BASE := android-micromax
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
