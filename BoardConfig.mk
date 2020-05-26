@@ -148,11 +148,16 @@ BOARD_KERNEL_SEPARATED_DT := true
 BOARD_KERNEL_TAGS_OFFSET := 0x01E00000
 BOARD_RAMDISK_OFFSET := 0x02000000
 LZMA_RAMDISK_TARGETS := recovery
-
 KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/aarch64/aarch64-opt-linux-android/bin
 TARGET_KERNEL_CONFIG := yuphoria_lettuce_defconfig
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-opt-linux-android-
 TARGET_KERNEL_SOURCE := kernel/cyanogen/msm8916
+
+# Peripheral manager
+TARGET_PER_MGR_ENABLED := true
+
+# RIL
+DISABLE_RILD_OEM_HOOK := false
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
@@ -162,7 +167,6 @@ DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
-
 TARGET_HAS_NO_POWER_STATS := true
 TARGET_POWERHAL_VARIANT := qcom
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/soc.0/78b9000.i2c/i2c-5/5-0040/double_tap_enable"
@@ -209,7 +213,6 @@ TARGET_USE_SDCLANG := true
 
 # Widevine
 BOARD_WIDEVINE_OEMCRYPTO_LEVEL := 3
-
 
 # Wi-Fi
 BOARD_HAS_QCOM_WLAN := true
