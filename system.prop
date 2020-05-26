@@ -36,13 +36,6 @@ persist.hwc.ptor.enable=true
 debug.enable.sglscale=1
 ro.sf.lcd_density=280
 
-# Net Speed
-net.tcp.buffersize.default=4096,87380,256960,4096, 16384,256960
-net.tcp.buffersize.wifi=4096,87380,256960,4096,163 84,256960
-net.tcp.buffersize.umts=4096,87380,256960,4096,163 84,256960
-net.tcp.buffersize.gprs=4096,87380,256960,4096,163 84,256960
-net.tcp.buffersize.edge=4096,87380,256960,4096,163 84,256960
-
 # IMS
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
