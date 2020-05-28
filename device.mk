@@ -17,6 +17,7 @@
     
 # Open Gapps
 GAPPS_VARIANT := pico
+GAPPS_EXCLUDED_PACKAGES := GoogleCalendarSyncAdapter
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
