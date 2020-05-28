@@ -13,10 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Boot animation
-TARGET_BOOT_ANIMATION_RES := 720
-TARGET_BOOTANIMATION_HALF_RES := true
-
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
@@ -36,32 +32,25 @@ TARGET_BOARD_PLATFORM_VARIANT := msm8916
 
 # Device identifier. This must come after all inclusions
 PRODUCT_NAME := lineage_lettuce
+BOARD_VENDOR := yu
 PRODUCT_DEVICE := lettuce
 PRODUCT_BRAND := YU
 PRODUCT_MODEL := YU5010
 PRODUCT_MANUFACTURER := YU
+
+# Vendor security patch level
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.lineage.build.vendor_security_patch=2016-05-01
+
+# Boot animation
+TARGET_BOOT_ANIMATION_RES := 480
 
 PRODUCT_GMS_CLIENTID_BASE := android-micromax
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
 	PRIVATE_BUILD_DESC="YUPHORIA-user $(PLATFORM_VERSION) $(BUILD_ID) MMXMR1 release-keys" \
     BUILD_VERSION_SECURITY_PATCH=2020-05-05 \
-    PRODUCT_MODEL="Pixel 3" \
-    PRODUCT_NAME=blueline \
-    PRODUCT_DEVICE=blueline \
-    PRODUCT_BRAND=google \
-    PRODUCT_MANUFACTURER=Google \
-    OPA_ELIGIBLE_DEVICE=TRUE \
-    PRODUCT_LOCALE="en-US" \
-    PRODUCT_CPU_ABI="arm64-v8a" \
-    PRODUCT_CPU_ABILIST="arm64-v8a,armeabi-v7a,armeabi" \
-    PRODUCT_CPU_ABILIST32="armeabi-v7a,armeabi" \
-    PRODUCT_CPU_ABILIST64="arm64-v8a" \
-    LINEAGE_BUILD_VENDOR_SECURITY_PATCH=2016-05-01 \
-    BUILD_FINGERPRINT=$(BUILD_FINGERPRINT) \
-    SYSTEM_BUILD_FINGERPRINT=$(BUILD_FINGERPRINT) \
-    VENDOR_BUILD_FINGERPRINT=$(BUILD_FINGERPRINT)
+    PRODUCT_NAME=YUPHORIA \
+    TARGET_DEVICE=YUPHORIA
 
 BUILD_FINGERPRINT=YU/YUPHORIA/YUPHORIA:$(PLATFORM_VERSION)/$(BUILD_ID)/MMXMR1:$(TARGET_BUILD_VARIANT)/release-keys
-
-TARGET_OTA_ASSERT_DEVICE := YUPHORIA,lettuce,YU5010,YU5010A
