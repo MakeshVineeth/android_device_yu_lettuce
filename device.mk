@@ -325,3 +325,7 @@ $(call inherit-product, vendor/yu/lettuce/lettuce-vendor.mk)
 
 PRODUCT_PACKAGES += \
     F-DroidPrivilegedExtension
+    
+# Open Gapps
+GAPPS_VARIANT := pico
+$(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)

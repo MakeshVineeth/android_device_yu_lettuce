@@ -13,52 +13,48 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Boot animation
+TARGET_BOOT_ANIMATION_RES := 720
+TARGET_BOOTANIMATION_HALF_RES := true
+
+# Inherit some common LineageOS stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
+# Inherit from the common Open Source product configuration
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_l_mr1.mk)
 
 # Inherit from lettuce device
 $(call inherit-product, device/yu/lettuce/device.mk)
-
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Must define platform variant before including any common things
 TARGET_BOARD_PLATFORM_VARIANT := msm8916
 
 # Device identifier. This must come after all inclusions
 PRODUCT_NAME := lineage_lettuce
-BOARD_VENDOR := yu
 PRODUCT_DEVICE := lettuce
 PRODUCT_BRAND := YU
 PRODUCT_MODEL := YU5010
 PRODUCT_MANUFACTURER := YU
 
-TARGET_VENDOR_PRODUCT_NAME := YUPHORIA
-TARGET_VENDOR_DEVICE_NAME := YUPHORIA
-TARGET_BOOT_ANIMATION_RES := 720
-
 # Set Security Patch Manually
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.lineage.build.vendor_security_patch=2016-05-01 \
-    ro.build.version.security_patch=2020-05-05 \
-    ro.build.fingerprint=$(BUILD_FINGERPRINT) \
-    ro.system.build.fingerprint=$(BUILD_FINGERPRINT) \
-    ro.vendor.build.fingerprint=$(BUILD_FINGERPRINT) \
-    ro.product.model=Pixel 3 \
-    ro.product.name=blueline \
-    ro.product.device=blueline \
-    ro.product.brand=Google \
-    ro.product.manufacturer=Google \
-    ro.opa.eligible_device=true
+    ro.lineage.build.vendor_security_patch=2016-05-01
 
 PRODUCT_GMS_CLIENTID_BASE := android-micromax
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-	PRIVATE_BUILD_DESC="YUPHORIA-user $(PLATFORM_VERSION) $(BUILD_ID) MMXMR1 release-keys"
+	PRIVATE_BUILD_DESC="YUPHORIA-user $(PLATFORM_VERSION) $(BUILD_ID) MMXMR1 release-keys" \
+	ro.build.version.security_patch=2020-05-05 \
+    	ro.build.fingerprint=$(BUILD_FINGERPRINT) \
+    	ro.system.build.fingerprint=$(BUILD_FINGERPRINT) \
+    	ro.vendor.build.fingerprint=$(BUILD_FINGERPRINT)
 
-BUILD_FINGERPRINT=YU/YUPHORIA/YUPHORIA:5.1.1/LMY49J/YOG4PAS8A8:user/release-keys
+
+BUILD_FINGERPRINT=YU/YUPHORIA/YUPHORIA:$(PLATFORM_VERSION)/$(BUILD_ID)/MMXMR1:$(TARGET_BUILD_VARIANT)/release-keys
 
 TARGET_OTA_ASSERT_DEVICE := YUPHORIA,lettuce,YU5010,YU5010A
-TARGET_VENDOR := yu

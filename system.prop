@@ -1,3 +1,11 @@
+# Naming to Pixel 3 for enabling some features
+ro.product.model=Pixel 3
+ro.product.name=blueline
+ro.product.device=blueline
+ro.product.brand=Google
+ro.product.manufacturer=Google
+ro.opa.eligible_device=true
+
 # Audio
 ro.vendor.audio.sdk.fluencetype=fluence
 persist.vendor.audio.fluence.speaker=true
@@ -119,7 +127,3 @@ ro.kernel.checkjni=0
 # Instant Calling
 ro.telephony.call_ring.delay = 0
 ring.delay = 0
-
-# Redundant line for setting security patch
-ro.lineage.build.vendor_security_patch=2016-05-01
-ro.build.version.security_patch=2020-05-05
