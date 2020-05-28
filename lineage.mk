@@ -43,21 +43,15 @@ PRODUCT_MANUFACTURER := YU
 
 # Set Security Patch Manually
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.lineage.build.vendor_security_patch=2016-05-01
+    ro.lineage.build.vendor_security_patch=2016-05-01 \
+	ro.build.fingerprint=$(BUILD_FINGERPRINT) \
+    ro.system.build.fingerprint=$(BUILD_FINGERPRINT) \
+    ro.vendor.build.fingerprint=$(BUILD_FINGERPRINT)
 
 PRODUCT_GMS_CLIENTID_BASE := android-micromax
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-	PRIVATE_BUILD_DESC="YUPHORIA-user $(PLATFORM_VERSION) $(BUILD_ID) MMXMR1 release-keys" \
-    ro.build.fingerprint=$(BUILD_FINGERPRINT) \
-    ro.system.build.fingerprint=$(BUILD_FINGERPRINT) \
-    ro.vendor.build.fingerprint=$(BUILD_FINGERPRINT) \
-	ro.product.model=Pixel 3
-	ro.product.name=blueline
-	ro.product.device=blueline
-	ro.product.brand=Google
-	ro.product.manufacturer=Google
-	ro.opa.eligible_device=true
+	PRIVATE_BUILD_DESC="YUPHORIA-user $(PLATFORM_VERSION) $(BUILD_ID) MMXMR1 release-keys"
 
 BUILD_FINGERPRINT=YU/YUPHORIA/YUPHORIA:$(PLATFORM_VERSION)/$(BUILD_ID)/MMXMR1:$(TARGET_BUILD_VARIANT)/release-keys
 
