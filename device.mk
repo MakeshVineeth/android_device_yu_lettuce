@@ -14,6 +14,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+    
+# Open Gapps
+GAPPS_VARIANT := pico
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
@@ -325,7 +328,5 @@ $(call inherit-product, vendor/yu/lettuce/lettuce-vendor.mk)
 
 PRODUCT_PACKAGES += \
     F-DroidPrivilegedExtension
-    
-# Open Gapps
-GAPPS_VARIANT := pico
+
 $(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
