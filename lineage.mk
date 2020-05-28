@@ -50,10 +50,15 @@ PRODUCT_GMS_CLIENTID_BASE := android-micromax
 PRODUCT_BUILD_PROP_OVERRIDES += \
 	PRIVATE_BUILD_DESC="YUPHORIA-user $(PLATFORM_VERSION) $(BUILD_ID) MMXMR1 release-keys" \
 	ro.build.version.security_patch=2020-05-05 \
-    	ro.build.fingerprint=$(BUILD_FINGERPRINT) \
-    	ro.system.build.fingerprint=$(BUILD_FINGERPRINT) \
-    	ro.vendor.build.fingerprint=$(BUILD_FINGERPRINT)
-
+    ro.build.fingerprint=$(BUILD_FINGERPRINT) \
+    ro.system.build.fingerprint=$(BUILD_FINGERPRINT) \
+    ro.vendor.build.fingerprint=$(BUILD_FINGERPRINT) \
+	ro.product.model=Pixel 3
+	ro.product.name=blueline
+	ro.product.device=blueline
+	ro.product.brand=Google
+	ro.product.manufacturer=Google
+	ro.opa.eligible_device=true
 
 BUILD_FINGERPRINT=YU/YUPHORIA/YUPHORIA:$(PLATFORM_VERSION)/$(BUILD_ID)/MMXMR1:$(TARGET_BUILD_VARIANT)/release-keys
 
