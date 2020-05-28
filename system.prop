@@ -1,11 +1,3 @@
-# Naming to Pixel 3 for enabling some features
-ro.product.model=Pixel 3
-ro.product.name=blueline
-ro.product.device=blueline
-ro.product.brand=Google
-ro.product.manufacturer=Google
-ro.opa.eligible_device=true
-
 # Audio
 ro.vendor.audio.sdk.fluencetype=fluence
 persist.vendor.audio.fluence.speaker=true
