@@ -33,6 +33,8 @@
 #include <unistd.h>
 #include <sys/stat.h>
 #include <sys/types.h>
+#define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
+#include <sys/_system_properties.h>
 
 #include <android-base/file.h>
 #include <android-base/logging.h>
@@ -85,8 +87,28 @@ static void init_alarm_boot_properties()
     }
 }
 
+void property_override(char const prop[], char const value[])
+{
+    prop_info *pi;
+
+    pi = (prop_info*) __system_property_find(prop);
+    if (pi)
+        __system_property_update(pi, value, strlen(value));
+    else
+        __system_property_add(prop, strlen(prop), value, strlen(value));
+}
+
+void property_override_dual(char const system_prop[], char const vendor_prop[],
+    char const value[])
+{
+    property_override(system_prop, value);
+    property_override(vendor_prop, value);
+}
+
 void vendor_load_properties()
 {
     init_target_properties();
     init_alarm_boot_properties();
+    property_override("ro.build.description", "YUPHORIA-user 5.1.1 LMY49J YOG4PAS8A8 release-keys");
+    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys");
 }
