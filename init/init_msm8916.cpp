@@ -110,6 +110,12 @@ void vendor_load_properties()
     init_target_properties();
     init_alarm_boot_properties();
     property_override("ro.build.version.security_patch", "2020-05-05");
+    property_override("ro.product.model", "Pixel 4 XL");
+    property_override("ro.product.brand", "google");
+    property_override("ro.product.name", "coral");
+    property_override("ro.product.device", "coral");
+    property_override("ro.product.manufacturer", "Google");
+    property_override("ro.opa.eligible_device", "true");
     property_override("ro.build.description", "YUPHORIA-user 5.1.1 LMY49J YOG4PAS8A8 release-keys");
     property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/coral/coral:10/QQ2A.200501.001.A3/6353761:user/release-keys");
 }
