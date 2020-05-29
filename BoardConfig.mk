@@ -17,9 +17,6 @@
 
 DEVICE_PATH := device/yu/lettuce
 
-BUILD_BROKEN_DUP_RULES := true
-BUILD_BROKEN_PHONY_TARGETS := true
-
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOARD_PLATFORM := msm8916
