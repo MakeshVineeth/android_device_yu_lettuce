@@ -109,6 +109,7 @@ void vendor_load_properties()
 {
     init_target_properties();
     init_alarm_boot_properties();
+    property_override("ro.build.version.security_patch", "2020-05-05");
     property_override("ro.build.description", "YUPHORIA-user 5.1.1 LMY49J YOG4PAS8A8 release-keys");
     property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys");
 }
