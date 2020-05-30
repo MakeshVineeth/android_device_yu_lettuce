@@ -102,10 +102,6 @@ ro.config.max_starting_bg=8
 ro.vendor.extension_library=libqti-perfd-client.so
 sys.use_fifo_ui=1
 
-# Touch response
-persist.vendor.qti.inputopts.enable=true
-persist.vendor.qti.inputopts.movetouchslop=0.6
-
 # Wi-Fi
 wifi.interface=wlan0
 
