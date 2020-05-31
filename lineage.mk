@@ -30,11 +30,13 @@ TARGET_BOARD_PLATFORM_VARIANT := msm8916
 
 # Device identifier. This must come after all inclusions
 PRODUCT_NAME := lineage_lettuce
-BOARD_VENDOR := yu
 PRODUCT_DEVICE := lettuce
 PRODUCT_BRAND := YU
 PRODUCT_MODEL := YU5010
 PRODUCT_MANUFACTURER := YU
+
+TARGET_VENDOR_PRODUCT_NAME := Yuphoria
+TARGET_VENDOR_DEVICE_NAME := Yuphoria
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 720
