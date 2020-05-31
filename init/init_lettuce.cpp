@@ -58,7 +58,4 @@ void vendor_load_properties()
     // fingerprint
     property_override("ro.build.description", "YUPHORIA-user 5.1.1 LMY49J YOG4PAS8A8 release-keys");
     property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/coral/coral:10/QQ2A.200501.001.B2/6352890:user/release-keys");
-
-    // privapp permisison control
-    property_override("ro.control_privapp_permissions", "log");
 }
