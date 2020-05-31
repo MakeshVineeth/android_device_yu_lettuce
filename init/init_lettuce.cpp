@@ -1,6 +1,5 @@
 /*
-   Copyright (c) 2016, The CyanogenMod Project
-
+   Copyright (c) 2014, The Linux Foundation. All rights reserved.
    Redistribution and use in source and binary forms, with or without
    modification, are permitted provided that the following conditions are
    met:
@@ -13,7 +12,6 @@
     * Neither the name of The Linux Foundation nor the names of its
       contributors may be used to endorse or promote products derived
       from this software without specific prior written permission.
-
    THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED
    WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT
@@ -27,66 +25,40 @@
    IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <fcntl.h>
-#include <stdio.h>
 #include <stdlib.h>
-#include <unistd.h>
-#include <sys/stat.h>
-#include <sys/types.h>
+#define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
+#include <sys/_system_properties.h>
 
-#include <android-base/file.h>
-#include <android-base/logging.h>
 #include <android-base/properties.h>
-#include <android-base/strings.h>
-
-#include "log.h"
 #include "property_service.h"
-#include "util.h"
 #include "vendor_init.h"
 
-#include "init_msm8916.h"
-
-using android::base::GetProperty;
-using android::base::ReadFileToString;
-using android::base::Trim;
 using android::init::property_set;
 
-__attribute__ ((weak))
-void init_target_properties()
+void property_override(char const prop[], char const value[])
 {
+    prop_info *pi;
+
+    pi = (prop_info*) __system_property_find(prop);
+    if (pi)
+        __system_property_update(pi, value, strlen(value));
+    else
+        __system_property_add(prop, strlen(prop), value, strlen(value));
 }
 
-static void init_alarm_boot_properties()
+void property_override_dual(char const system_prop[], char const vendor_prop[],
+    char const value[])
 {
-    char const *boot_reason_file = "/proc/sys/kernel/boot_reason";
-    std::string boot_reason;
-    std::string tmp = GetProperty("ro.boot.alarmboot","");
-
-    if (ReadFileToString(boot_reason_file, &boot_reason)) {
-        /*
-         * Setup ro.alarm_boot value to true when it is RTC triggered boot up
-         * For existing PMIC chips, the following mapping applies
-         * for the value of boot_reason:
-         *
-         * 0 -> unknown
-         * 1 -> hard reset
-         * 2 -> sudden momentary power loss (SMPL)
-         * 3 -> real time clock (RTC)
-         * 4 -> DC charger inserted
-         * 5 -> USB charger insertd
-         * 6 -> PON1 pin toggled (for secondary PMICs)
-         * 7 -> CBLPWR_N pin toggled (for external power supply)
-         * 8 -> KPDPWR_N pin toggled (power key pressed)
-         */
-        if (Trim(boot_reason) == "3" || tmp == "true")
-            property_set("ro.alarm_boot", "true");
-        else
-            property_set("ro.alarm_boot", "false");
-    }
+    property_override(system_prop, value);
+    property_override(vendor_prop, value);
 }
 
 void vendor_load_properties()
 {
-    init_target_properties();
-    init_alarm_boot_properties();
+    // fingerprint
+    property_override("ro.build.description", "YUPHORIA-user 5.1.1 LMY49J YOG4PAS8A8 release-keys");
+    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/coral/coral:10/QQ2A.200501.001.B2/6352890:user/release-keys");
+
+    // privapp permisison control
+    property_override("ro.control_privapp_permissions", "log");
 }

@@ -135,8 +135,10 @@ USE_DEVICE_SPECIFIC_GPS := true
 HWUI_COMPILE_FOR_PERF := true
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_msm8916
-TARGET_RECOVERY_DEVICE_MODULES := libinit_msm8916
+TARGET_INIT_VENDOR_LIB += libinit_msm8916 \
+			libinit_lettuce
+TARGET_RECOVERY_DEVICE_MODULES += libinit_msm8916 \
+				libinit_lettuce
 
 # Kernel
 BOARD_DTBTOOL_ARGS := -2
