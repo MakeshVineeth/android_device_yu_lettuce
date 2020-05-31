@@ -135,9 +135,9 @@ HWUI_COMPILE_FOR_PERF := true
 
 # Init
 TARGET_INIT_VENDOR_LIB += libinit_msm8916 \
-			libinit_lettuce
+													//$(DEVICE_PATH):libinit_lettuce
 TARGET_RECOVERY_DEVICE_MODULES += libinit_msm8916 \
-				libinit_lettuce
+																	libinit_lettuce
 
 # Kernel
 BOARD_DTBTOOL_ARGS := -2
