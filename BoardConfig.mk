@@ -15,6 +15,7 @@
 # limitations under the License.
 #
 
+BOARD_VENDOR := lettuce
 DEVICE_PATH := device/yu/lettuce
 
 # Platform
@@ -85,6 +86,10 @@ TARGET_FORCE_HWC_FOR_VIRTUAL_DISPLAYS := true
 TARGET_USES_C2D_COMPOSITION := true
 TARGET_USES_ION := true
 TARGET_USES_NEW_ION_API := true
+
+# Bootloader
+TARGET_BOOTLOADER_BOARD_NAME := lettuce
+TARGET_NO_BOOTLOADER := true
 
 # Encryption
 TARGET_HW_DISK_ENCRYPTION := true
