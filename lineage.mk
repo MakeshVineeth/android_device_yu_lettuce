@@ -21,6 +21,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_l_mr1.mk)
 
 # Inherit from lettuce device
 $(call inherit-product, device/yu/lettuce/device.mk)
@@ -45,6 +46,9 @@ TARGET_BOOTANIMATION_PRELOAD := true
 TARGET_BOOTANIMATION_TEXTURE_CACHE := true
 TARGET_BOOTANIMATION_NAME := 720
 TARGET_BOOT_ANIMATION_RES := 720
+
+TARGET_USES_QCOM_BSP := true
+DISABLE_EAP_PROXY := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-micromax
 
