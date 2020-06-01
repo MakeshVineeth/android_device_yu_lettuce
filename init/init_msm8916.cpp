@@ -109,4 +109,6 @@ void vendor_load_properties()
     for (const string &prop : prop_partitions) {
         property_override(string("ro.") + prop + string("build.fingerprint"), fp);
     }
+
+    property_override(string("ro.build.version.security_patch", "2020-05-05");
 }
