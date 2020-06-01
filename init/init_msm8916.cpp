@@ -46,14 +46,28 @@
 
 #include "init_msm8916.h"
 
+#define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
+#include <sys/_system_properties.h>
+
 using android::base::GetProperty;
 using android::base::ReadFileToString;
 using android::base::Trim;
 using android::init::property_set;
+using std::string;
 
 __attribute__ ((weak))
 void init_target_properties()
 {
+}
+
+void property_override(string prop, string value)
+{
+    auto pi = (prop_info*) __system_property_find(prop.c_str());
+
+    if (pi != nullptr)
+        __system_property_update(pi, value.c_str(), value.size());
+    else
+        __system_property_add(prop.c_str(), prop.size(), value.c_str(), value.size());
 }
 
 static void init_alarm_boot_properties()
@@ -89,4 +103,10 @@ void vendor_load_properties()
 {
     init_target_properties();
     init_alarm_boot_properties();
+    string fp = "google/coral/coral:10/QQ2A.200501.001.B2/6352890:user/release-keys";
+    string prop_partitions[] = { "", "odm.", "product.", "system.", "vendor." };
+
+    for (const string &prop : prop_partitions) {
+        property_override(string("ro.") + prop + string("build.fingerprint"), fp);
+    }
 }
