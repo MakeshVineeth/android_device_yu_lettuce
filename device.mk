@@ -320,3 +320,8 @@ PRODUCT_COPY_FILES += \
 
 # Call the proprietary setup
 $(call inherit-product, vendor/yu/lettuce/lettuce-vendor.mk)
+
+# Custom Apps
+
+PRODUCT_PACKAGES += \
+    F-DroidPrivilegedExtension
