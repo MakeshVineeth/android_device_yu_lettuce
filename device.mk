@@ -324,4 +324,10 @@ $(call inherit-product, vendor/yu/lettuce/lettuce-vendor.mk)
 # Custom Apps
 
 PRODUCT_PACKAGES += \
-    F-DroidPrivilegedExtension
+    F-DroidPrivilegedExtension \
+		messaging \
+		webview \
+		launcher \
+		contacts \
+		dialer \
+		keyboard
