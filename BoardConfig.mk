@@ -145,12 +145,9 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_KERNEL_TAGS_OFFSET := 0x01E00000
 BOARD_RAMDISK_OFFSET := 0x02000000
 LZMA_RAMDISK_TARGETS := recovery
-TARGET_KERNEL_ARCH := arm64
-TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CLANG_VERSION := 11.0
-KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-11.0/bin
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-gnu-
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/aarch64/aarch64-opt-linux-android/bin
 TARGET_KERNEL_CONFIG := yuphoria_lettuce_defconfig
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-opt-linux-android-
 TARGET_KERNEL_SOURCE := kernel/cyanogen/msm8916
 
 # Peripheral manager
