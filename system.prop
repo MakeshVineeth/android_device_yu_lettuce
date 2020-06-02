@@ -121,3 +121,7 @@ ro.kernel.checkjni=0
 # Instant Calling
 ro.telephony.call_ring.delay = 0
 ring.delay = 0
+
+# Defaults
+net.hostname=Yuphoria
+persist.sys.usb.config=mtp,adb
