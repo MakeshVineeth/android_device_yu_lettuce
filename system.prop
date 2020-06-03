@@ -132,3 +132,4 @@ net.bt.name=Yuphoria
 ro.build.type=user
 ro.build.flavor=coral-user
 ro.system.build.type=user
+persist.sys.timezone=Asia/Kolkata
