@@ -111,4 +111,5 @@ void vendor_load_properties()
     }
 
     property_override("ro.build.version.security_patch", "2020-06-05");
+    property_override("ro.bootimage.build.fingerprint", fp);
 }

@@ -62,13 +62,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 BUILD_FINGERPRINT := google/coral/coral:10/QQ3A.200605.001/6392402:user/release-keys
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.fingerprint=$(BUILD_FINGERPRINT) \
-    ro.system.build.fingerprint=$(BUILD_FINGERPRINT) \
-    ro.vendor.build.fingerprint=$(BUILD_FINGERPRINT) \
-		ro.build.version.security_patch=2020-06-05  \
-		ro.bootimage.build.fingerprint=$(BUILD_FINGERPRINT)
-
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT=$(BUILD_FINGERPRINT) \
     SYSTEM_BUILD_FINGERPRINT=$(BUILD_FINGERPRINT) \
