@@ -103,12 +103,12 @@ void vendor_load_properties()
 {
     init_target_properties();
     init_alarm_boot_properties();
-    string fp = "google/coral/coral:10/QQ2A.200501.001.B2/6352890:user/release-keys";
+    string fp = "google/coral/coral:10/QQ3A.200605.001/6392402:user/release-keys";
     string prop_partitions[] = { "", "odm.", "product.", "system.", "vendor." };
 
     for (const string &prop : prop_partitions) {
         property_override(string("ro.") + prop + string("build.fingerprint"), fp);
     }
 
-    property_override("ro.build.version.security_patch", "2020-05-05");
+    property_override("ro.build.version.security_patch", "2020-06-05");
 }

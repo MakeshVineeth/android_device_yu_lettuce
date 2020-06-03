@@ -53,24 +53,24 @@ DISABLE_EAP_PROXY := true
 PRODUCT_GMS_CLIENTID_BASE := android-micromax
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="coral-user 10 QQ2A.200501.001.B2 6352890 release-keys" \
+    PRIVATE_BUILD_DESC="coral-user 10 QQ3A.200605.001 6392402 release-keys" \
     PRODUCT_NAME=YUPHORIA \
     TARGET_DEVICE=YUPHORIA
 
-BUILD_FINGERPRINT := google/coral/coral:10/QQ2A.200501.001.B2/6352890:user/release-keys
+BUILD_FINGERPRINT := google/coral/coral:10/QQ3A.200605.001/6392402:user/release-keys
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT) \
     ro.system.build.fingerprint=$(BUILD_FINGERPRINT) \
     ro.vendor.build.fingerprint=$(BUILD_FINGERPRINT) \
-		ro.build.version.security_patch=2020-05-05 \
+		ro.build.version.security_patch=2020-06-05  \
 		ro.bootimage.build.fingerprint=$(BUILD_FINGERPRINT)
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT=$(BUILD_FINGERPRINT) \
     SYSTEM_BUILD_FINGERPRINT=$(BUILD_FINGERPRINT) \
     VENDOR_BUILD_FINGERPRINT=$(BUILD_FINGERPRINT) \
-		BUILD_VERSION_SECURITY_PATCH=2020-05-05
+		BUILD_VERSION_SECURITY_PATCH=2020-06-05
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 		    ro.build.fingerprint=$(BUILD_FINGERPRINT)
