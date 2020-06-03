@@ -89,6 +89,7 @@ ro.telephony.default_network=9,9
 persist.data.qmi.adb_logmask=0
 ro.telephony.call_ring.multiple=false
 ro.config.always_show_roaming=true
+persist.vendor.data.mode=concurrent
 
 # Media
 drm.service.enabled=1
@@ -123,5 +124,11 @@ ro.telephony.call_ring.delay = 0
 ring.delay = 0
 
 # Defaults
-net.hostname=Yuphoria
+net.hostname=yuphoria
 persist.sys.usb.config=mtp,adb
+persist.rcs.supported=1
+ro.storage_manager.enabled=false
+net.bt.name=Yuphoria
+ro.build.type=user
+ro.build.flavor=coral-user
+ro.system.build.type=user
