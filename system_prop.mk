@@ -134,7 +134,6 @@ ring.delay = 0
 # Defaults
 PRODUCT_PROPERTY_OVERRIDES += \
 net.hostname=yuphoria \
-persist.sys.usb.config=mtp,adb \
 persist.rcs.supported=1 \
 ro.storage_manager.enabled=false \
 net.bt.name=Yuphoria \
