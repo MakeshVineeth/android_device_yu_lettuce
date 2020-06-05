@@ -134,10 +134,8 @@ ring.delay = 0
 
 # Defaults
 PRODUCT_PROPERTY_OVERRIDES += \
-net.hostname=yuphoria \
 persist.rcs.supported=1 \
 ro.storage_manager.enabled=false \
-net.bt.name=Yuphoria \
 ro.build.type=user \
 ro.build.flavor=coral-user \
 ro.system.build.type=user \
