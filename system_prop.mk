@@ -135,8 +135,4 @@ ring.delay = 0
 # Defaults
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.rcs.supported=1 \
-ro.storage_manager.enabled=false \
-ro.build.type=user \
-ro.build.flavor=coral-user \
-ro.system.build.type=user \
 persist.sys.timezone=Asia/Kolkata
