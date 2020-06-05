@@ -41,7 +41,7 @@ persist.hwc.mdpcomp.enable=true \
 persist.hwc.ptor.enable=true \
 debug.enable.sglscale=1 \
 ro.opengles.version=196608 \
-ro.sf.lcd_density=305
+ro.sf.lcd_density=300
 
 # Healthd
 PRODUCT_PROPERTY_OVERRIDES += \
