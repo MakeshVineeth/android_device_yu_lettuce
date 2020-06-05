@@ -144,6 +144,7 @@ KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/aarch64/aarch64
 TARGET_KERNEL_CONFIG := yuphoria_lettuce_defconfig
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-opt-linux-android-
 TARGET_KERNEL_SOURCE := kernel/cyanogen/msm8916
+TARGET_KERNEL_ARCH := arm64
 
 # Peripheral manager
 TARGET_PER_MGR_ENABLED := true
