@@ -117,6 +117,7 @@ TARGET_QCOM_NO_FM_FIRMWARE := true
 
 # Framework sched boost
 ENABLE_SCHED_BOOST := true
+TARGET_USES_INTERACTION_BOOST := true
 
 # GPS
 TARGET_NO_RPC := true
