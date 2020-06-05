@@ -147,9 +147,6 @@ TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-opt-linux-android-
 TARGET_KERNEL_SOURCE := kernel/cyanogen/msm8916
 TARGET_KERNEL_ARCH := arm64
 
-# Telephony
-TARGET_USES_ALTERNATIVE_MANUAL_NETWORK_SELECT := true
-
 # Peripheral manager
 TARGET_PER_MGR_ENABLED := true
 

@@ -86,8 +86,7 @@ rild.libargs=-d /dev/smd0 \
 ro.telephony.default_network=9,9 \
 persist.data.qmi.adb_logmask=0 \
 ro.telephony.call_ring.multiple=false \
-ro.config.always_show_roaming=true \
-persist.vendor.data.mode=concurrent
+ro.config.always_show_roaming=true
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
