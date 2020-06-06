@@ -15,6 +15,7 @@
 # limitations under the License.
 #
 
+BOARD_VENDOR := yu
 DEVICE_PATH := device/yu/lettuce
 
 # Platform
@@ -37,6 +38,9 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a53
 
 TARGET_USES_64_BIT_BINDER := true
+
+BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_PHONY_TARGETS := true
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := lettuce,YU5010,YU5010A,YUPHORIA
