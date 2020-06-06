@@ -199,11 +199,6 @@ TARGET_LD_SHIM_LIBS := \
     /system/vendor/lib/libflp.so|libshims_flp.so \
     /system/vendor/lib/libizat_core.so|libshims_get_process_name.so
 
-# TWRP
-ifeq ($(WITH_TWRP),true)
-include $(DEVICE_PATH)/twrp.mk
-endif
-
 # Use Snapdragon LLVM, if available
 TARGET_USE_SDCLANG := true
 
