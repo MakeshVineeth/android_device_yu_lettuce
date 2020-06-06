@@ -26,9 +26,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_l_mr1.mk
 # Inherit from lettuce device
 $(call inherit-product, device/yu/lettuce/device.mk)
 
-# Inherit System Properties
-$(call inherit-product, device/yu/lettuce/system_prop.mk)
-
 # Must define platform variant before including any common things
 TARGET_BOARD_PLATFORM_VARIANT := msm8916
 
@@ -52,7 +49,7 @@ TARGET_BOOT_ANIMATION_RES := 720
 TARGET_USES_QCOM_BSP := true
 DISABLE_EAP_PROXY := true
 
-PRODUCT_GMS_CLIENTID_BASE := android-micromax    
+PRODUCT_GMS_CLIENTID_BASE := android-micromax
 
 BUILD_FINGERPRINT := google/coral/coral:10/QQ3A.200605.001/6392402:user/release-keys
 
