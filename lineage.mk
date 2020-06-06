@@ -21,7 +21,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_l_mr1.mk)
 
 # Inherit from lettuce device
 $(call inherit-product, device/yu/lettuce/device.mk)
@@ -56,6 +55,4 @@ BUILD_FINGERPRINT := google/coral/coral:10/QQ3A.200605.001/6392402:user/release-
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT=$(BUILD_FINGERPRINT) \
 	BUILD_VERSION_SECURITY_PATCH=2020-06-05 \
-    PRIVATE_BUILD_DESC="coral-user 10 QQ3A.200605.001 6392402 release-keys" \
-    BUILD_TYPE="user" \
-    BUILD_FLAVOR="coral-user"
+    PRIVATE_BUILD_DESC="coral-user 10 QQ3A.200605.001 6392402 release-keys"
