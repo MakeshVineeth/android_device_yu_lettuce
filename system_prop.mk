@@ -134,4 +134,5 @@ ring.delay = 0
 
 # Defaults
 PRODUCT_PROPERTY_OVERRIDES += \
+persist.rcs.supported=1 \
 persist.sys.timezone=Asia/Kolkata
