@@ -61,6 +61,8 @@ net.dns1=1.1.1.1
 net.dns2=1.0.0.1
 net.rmnet0.dns1=1.1.1.1
 net.rmnet0.dns2=1.0.0.1
+net.rmnet1.dns1=1.1.1.1
+net.rmnet1.dns2=1.0.0.1
 net.gprs.dns1=1.1.1.1
 net.gprs.dns2=1.0.0.1
 net.ppp0.dns1=1.1.1.1
@@ -73,6 +75,8 @@ dhcp.eth0.dns1=1.1.1.1
 dhcp.eth0.dns2=1.0.0.1
 dhcp.wlan0.dns1=1.1.1.1
 dhcp.wlan0.dns2=1.0.0.1
+net.pdpbr1.dns1=1.1.1.1
+net.pdpbr1.dns2=1.0.0.1
 
 # Healthd
 ro.enable_boot_charger_mode=1
@@ -146,6 +150,7 @@ persist.vendor.radio.apm_sim_not_pwdn=1
 ro.telephony.call_ring.multiple=false
 ro.config.always_show_roaming=true
 persist.vendor.data.mode=concurrent
+persist.radio.add_power_save=1
 
 # Media
 persist.media.treble_omx=false
@@ -202,3 +207,19 @@ persist.sys.timezone=Asia/Kolkata
 
 # Wi-Fi display
 persist.debug.wfd.enable=1
+
+# Old or Deprecated Tweaks Dump Lol
+ro.min.fling_velocity=160
+ro.max.fling_velocity=20000
+persist.cust.tel.eons=1
+ro.ril.enable.amr.wideband=1
+ro.config.hw_fast_dormancy=1
+logcat.live=disable
+net.tcp.buffersize.default=4096,87380,256960, 4096, 16384,256960
+net.tcp.buffersize.wifi=4096,87380,256960,409 6,163 84,256960
+net.tcp.buffersize.umts=4096,8 7380,256960,4096,163 84,256960
+net.tcp.buffersize.gprs=4096,8 7380,256960,4096,163 84,256960
+net.tcp.buffersize.edge=4096,8 7380,256960,4096,163 84,256960
+profiler.force_disable_err_rpt=1
+profiler.force_disable_ulog=1
+ro.HOME_APP_ADJ=1
