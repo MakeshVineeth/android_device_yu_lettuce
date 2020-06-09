@@ -331,3 +331,11 @@ PRODUCT_PACKAGES += \
 		contacts \
 		dialer \
 		keyboard
+
+# Extra Goodies
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/goodies/com.google.android.dialer.support.jar:system/framework/com.google.android.dialer.support.jar \
+		$(LOCAL_PATH)/goodies/com.google.android.dialer.support.xml:system/etc/permissions/com.google.android.dialer.support.xml \
+		$(LOCAL_PATH)/goodies/com.google.android.dialer.xml:system/etc/permissions/com.google.android.dialer.xml \
+		$(LOCAL_PATH)/goodies/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml \
+		$(LOCAL_PATH)/goodies/google_exclusives_enable.xml:system/etc/sysconfig/google_exclusives_enable.xml
