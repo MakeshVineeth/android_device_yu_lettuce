@@ -43,7 +43,6 @@ dalvik.vm.heapgrowthlimit=48m
 dalvik.vm.heapsize=64m
 dalvik.vm.execution-mode=int:jit
 dalvik.vm.lockprof.threshold=250
-dalvik.vm.stack-trace-file=/data/anr/traces.txt
 dalvik.vm.jmiopts=forcecopy
 dalvik.vm.dex2oat-filter=interpret-only
 dalvik.vm.image-dex2oat-filter=speed
@@ -225,8 +224,6 @@ persist.sys.timezone=Asia/Kolkata
 persist.debug.wfd.enable=1
 
 # Old or Deprecated Tweaks Dump Lol
-windowsmgr.max_events_per_sec=90
-ro.min_pointer_dur=8
 ro.max.fling_velocity=12000
 ro.min.fling_velocity=8000
 persist.sys.scrollingcache=3
@@ -242,10 +239,6 @@ profiler.force_disable_err_rpt=true
 ro.HOME_APP_ADJ=1
 ro.config.vc_call_steps=20
 persist.android.strictmode=0
-com.qc.hardware=1
-debug.qc.hardware=true
-debug.qctwa.preservebuf=1
-debug.qctwa.statusbar=1
 net.tcp.buffersize.default=4096,87380,256960,4096,16384,256960
 net.tcp.buffersize.wifi=4096,87380,256960,4096,16384,256960
 net.tcp.buffersize.umts=4096,87380,256960,4096,16384,256960
@@ -263,25 +256,9 @@ media.stagefright.enable-aac=true
 media.stagefright.enable-qcp=true
 media.stagefright.enable-record=true
 wifi.supplicant_scan_interval=120
-debug.sf.hw=1
-debug.performance.tuning=1
-debug.egl.profiler=1
-debug.egl.hw=1
-debug.composition.type=gpu
-persist.sys.ui.hw=1
 video.accelerate.hw=1
-ro.config.hw_quickpoweron=true
-persist.sys.shutdown.mode=hibernate
-ro.config.disable.hw_accel=false
-force_hw_ui=true
-debug.kill_allocating_task=0
-ro.debuggable=1
-persist.sys.use_dithering=1
-persist.service.pcsync.enable=0
-persist.service.lgospd.enable=0
 ro.media.dec.jpeg.memcap=8000000
 ro.media.enc.hprof.vid.bps=8000000
-ro.media.capture.maxres=8m
 ro.camcorder.videoModes=true
 ro.media.enc.hprof.vid.fps=65
 ro.media.dec.aud.wma.enabled=1
@@ -349,18 +326,7 @@ ro.ril.enable.a54=1
 ro.ril.enable.a55=1
 persist.cust.tel.eons=1
 
-# Gaming Tweaks
-persist.sys.NV_FPSLIMIT=90
-persist.sys.NV_POWERMODE=1
-persist.sys.NV_PROFVER=15
-persist.sys.NV_STEREOCTRL=0
-persist.sys.NV_STEREOSEPCHG=0
-persist.sys.NV_STEREOSEP=30
-
 ro.config.vc_call_default=10
-mot.proximity.delay=25
-ro.lge.proximity.delay=25
-ro.config.htc.nocheckin=1
 debugtool.anrhistory=0
 profiler.debugmonitor=false
 profiler.launch=false
@@ -409,4 +375,3 @@ persist.vendor.camera.video.CDS=1
 
 # Few more Pixel properties
 persist.audio.vr.enable=true
-net.bt.name=Android
