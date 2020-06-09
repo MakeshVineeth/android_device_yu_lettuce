@@ -37,31 +37,8 @@ ro.qualcomm.bt.hci_transport=smd
 dalvik.vm.checkjni=false
 dalvik.vm.verify-bytecode=false
 persist.sys.purgeable_assets=1
-dalvik.vm.dexopt-data-only=1
-dalvik.vm.heapstartsize=5m
-dalvik.vm.heapgrowthlimit=48m
-dalvik.vm.heapsize=64m
-dalvik.vm.execution-mode=int:jit
-dalvik.vm.lockprof.threshold=250
-dalvik.vm.jmiopts=forcecopy
-dalvik.vm.dex2oat-filter=interpret-only
-dalvik.vm.image-dex2oat-filter=speed
-
-# Dex2oat optimisation
-dalvik.vm.boot-dex2oat-threads=8
-dalvik.vm.dex2oat-flags=--no-watch-dog
-dalvik.vm.dex2oat-swap=false
-dalvik.vm.dex2oat-threads=4
-dalvik.vm.image-dex2oat-threads=4
-ro.sys.fw.dex2oat_thread_count=4
 
 # Display
-debug.hwui.use_buffer_age=false
-debug.composition.type=c2d
-debug.mdpcomp.idletime=600
-persist.hwc.mdpcomp.enable=true
-persist.hwc.ptor.enable=true
-debug.enable.sglscale=1
 ro.opengles.version=196608
 ro.sf.lcd_density=295
 
@@ -112,9 +89,6 @@ persist.radio.VT_USE_MDM_TIME=0
 persist.volte_enabled_by_hw=1
 telephony.lteOnCdmaDevice=1
 
-# Navigation bar
-qemu.hw.mainkeys=0
-
 # NITZ
 persist.rild.nitz_plmn=
 persist.rild.nitz_long_ons_0=
@@ -131,10 +105,6 @@ ro.com.google.clientidbase.am=android-micromax
 ro.com.google.clientidbase.gmm=android-micromax
 ro.com.google.clientidbase.ms=android-micromax
 ro.com.google.clientidbase.yt=android-micromax
-
-# Power Manager
-pm.sleep_mode=1
-ro.ril.disable.power.collapse=1
 
 # Radio
 DEVICE_PROVISIONED=1
@@ -160,7 +130,6 @@ ro.telephony.call_ring.multiple=false
 ro.config.always_show_roaming=true
 persist.vendor.data.mode=concurrent
 persist.radio.add_power_save=1
-
 persist.timed.enable=true
 
 # Media
@@ -169,31 +138,13 @@ drm.service.enabled=1
 vidc.enc.narrow.searchrange=1
 mm.enable.sec.smoothstreaming=true
 persist.mm.enable.prefetch=true
-media.stagefright.thumbnail.prefer_hw_codecs=true
 mmp.enable.3g2=true
 media.aac_51_output_enabled=true
 
 # Perf
 ro.am.reschedule_service=true
-ro.config.max_starting_bg=8
-ro.sys.fw.bservice_enable=true
-ro.sys.fw.bservice_limit=5
-ro.sys.fw.bservice_age=5000
-ro.sys.fw.use_trim_settings=true
-ro.sys.fw.empty_app_percent=50
-ro.sys.fw.trim_empty_percent=100
-ro.sys.fw.trim_cache_percent=100
-ro.sys.fw.trim_enable_memory=1073741824
 ro.vendor.extension_library=libqti-perfd-client.so
 ro.vendor.qti.am.reschedule_service=true
-ro.vendor.qti.sys.fw.bservice_enable=true
-ro.vendor.qti.sys.fw.bservice_limit=5
-ro.vendor.qti.sys.fw.bservice_age=5000
-ro.vendor.qti.sys.fw.use_trim_settings=true
-ro.vendor.qti.sys.fw.empty_app_percent=50
-ro.vendor.qti.sys.fw.trim_empty_percent=100
-ro.vendor.qti.sys.fw.trim_cache_percent=100
-ro.vendor.qti.sys.fw.trim_enable_memory=1073741824
 sys.use_fifo_ui=1
 
 # Wi-Fi
@@ -217,18 +168,11 @@ ro.telephony.call_ring.delay = 0
 ring.delay = 0
 
 # Defaults
-persist.rcs.supported=1
 persist.sys.timezone=Asia/Kolkata
-
-# Wi-Fi display
-persist.debug.wfd.enable=1
 
 # Old or Deprecated Tweaks Dump Lol
 ro.max.fling_velocity=12000
 ro.min.fling_velocity=8000
-persist.sys.scrollingcache=3
-ro.media.enc.jpeg.quality=100
-persist.cust.tel.eons=1
 ro.ril.enable.amr.wideband=1
 ro.config.hw_fast_dormancy=1
 logcat.live=disable
@@ -237,7 +181,6 @@ profiler.force_disable_ulog=1
 profiler.force_disable_ulog=true
 profiler.force_disable_err_rpt=true
 ro.HOME_APP_ADJ=1
-ro.config.vc_call_steps=20
 persist.android.strictmode=0
 net.tcp.buffersize.default=4096,87380,256960,4096,16384,256960
 net.tcp.buffersize.wifi=4096,87380,256960,4096,16384,256960
@@ -255,12 +198,7 @@ media.stagefright.enable-http=true
 media.stagefright.enable-aac=true
 media.stagefright.enable-qcp=true
 media.stagefright.enable-record=true
-wifi.supplicant_scan_interval=120
 video.accelerate.hw=1
-ro.media.dec.jpeg.memcap=8000000
-ro.media.enc.hprof.vid.bps=8000000
-ro.camcorder.videoModes=true
-ro.media.enc.hprof.vid.fps=65
 ro.media.dec.aud.wma.enabled=1
 ro.media.dec.vid.wmv.enabled=1
 ro.media.dec.aud.mp3.enabled=1
@@ -326,52 +264,12 @@ ro.ril.enable.a54=1
 ro.ril.enable.a55=1
 persist.cust.tel.eons=1
 
-ro.config.vc_call_default=10
 debugtool.anrhistory=0
 profiler.debugmonitor=false
 profiler.launch=false
 profiler.hung.dumpdobugreport=false
-ro.telephony.sms_segment_size=160
-ro.mot.eri.losalert.delay=1000
 
-# Cam2Api Props (Might not work)
-media.camera.ts.monotonic=1
-persist.camera.tnr.cds=1
-persist.tnr.process.plates=1
-persist.denoise.process.plates=1
-persist.camera.rdi.mode=1
-persist.camera.video.CDS=1
-persist.camera.HAL3.enabled=1
-persist.camera.is_type=5
-persist.camera.is_mode=5
-persist.camera.tnr_cds=1
-persist.camera.tnr.video=1
-persist.camera.tnr.preview=1
-persist.camera.tnr.snapshot=1
-persist.camera.llnoise=1
-persist.tnr.process.plates=2
-persist.denoise.process.plates=2
-camera.lowpower.record.enable=1
-
-persist.vendor.camera.awb.sync=2
-persist.vendor.camera.expose.aux=1
-persist.vendor.camera.imglib.usefdlite=1
-persist.vendor.camera.tnr.cds=1
-persist.vendor.process.plates=1
-persist.vendor.process.plates=1
-persist.vendor.camera.HAL3.enabled=1
-persist.vendor.camera.is_type=5
-persist.vendor.camera.is_mode=5
-persist.vendor.camera.tnr_cds=1
-persist.vendor.camera.tnr.video=1
-persist.vendor.camera.tnr.preview=1
-persist.vendor.camera.tnr.snapshot=1
-persist.vendor.camera.llnoise=1
-persist.vendor.tnr.process.plates=2
-persist.vendor.denoise.process.plates=2
-vendor.camera.lowpower.record.enable=1
-persist.vendor.camera.rdi.mode=1
-persist.vendor.camera.video.CDS=1
-
-# Few more Pixel properties
-persist.audio.vr.enable=true
+com.qc.hardware=1
+debug.qc.hardware=true
+debug.qctwa.preservebuf=1
+debug.qctwa.statusbar=1
