@@ -333,8 +333,7 @@ PRODUCT_PACKAGES += \
 		keyboard \
 		deskclock \
 		PixelThemeOverlay \
-		markup \
-		PixelNavBar
+		markup
 
 # Extra Goodies
 PRODUCT_COPY_FILES += \

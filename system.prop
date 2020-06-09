@@ -161,6 +161,7 @@ ro.telephony.call_ring.multiple=false
 ro.config.always_show_roaming=true
 persist.vendor.data.mode=concurrent
 persist.radio.add_power_save=1
+
 persist.timed.enable=true
 
 # Media
@@ -370,7 +371,6 @@ ro.telephony.sms_segment_size=160
 ro.mot.eri.losalert.delay=1000
 
 # Cam2Api Props (Might not work)
-persist.camera.eis.enable=1
 media.camera.ts.monotonic=1
 persist.camera.tnr.cds=1
 persist.tnr.process.plates=1
@@ -414,11 +414,5 @@ persist.vendor.camera.video.CDS=1
 
 # Few more Pixel properties
 persist.audio.vr.enable=true
-ro.opa.eligible_device=true
-ro.wallpapers_loc_request_suw=true
-ro.com.google.ime.theme_id=5
-ro.boot.vendor.overlay.theme=com.google.android.theme.pixel,com.botty.android.theme.pixel
-
+ro.boot.vendor.overlay.theme=com.google.android.theme.pixel
 net.bt.name=Android
-ro.vendor.qti.va_aosp.support=1
-ro.treble.enabled=true
