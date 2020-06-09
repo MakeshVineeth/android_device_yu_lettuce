@@ -339,4 +339,11 @@ PRODUCT_COPY_FILES += \
 		$(LOCAL_PATH)/goodies/com.google.android.dialer.support.xml:system/etc/permissions/com.google.android.dialer.support.xml \
 		$(LOCAL_PATH)/goodies/com.google.android.dialer.xml:system/etc/permissions/com.google.android.dialer.xml \
 		$(LOCAL_PATH)/goodies/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml \
-		$(LOCAL_PATH)/goodies/google_exclusives_enable.xml:system/etc/sysconfig/google_exclusives_enable.xml
+		$(LOCAL_PATH)/goodies/google_exclusives_enable.xml:system/etc/sysconfig/google_exclusives_enable.xml \
+		$(LOCAL_PATH)/goodies/com.sony.device.jar:system/framework/com.sony.device.jar \
+		$(LOCAL_PATH)/goodies/com.sonyericsson.music.jar:system/framework/com.sonyericsson.music.jar \
+		$(LOCAL_PATH)/goodies/com.sonyericsson.system.jar:system/framework/com.sonyericsson.system.jar \
+		$(LOCAL_PATH)/goodies/com.sonymobile.mediacontent.jar:system/framework/com.sonymobile.mediacontent.jar \
+		$(LOCAL_PATH)/goodies/com.sony.device.xml:system/etc/permissions/com.sony.device.xml \
+		$(LOCAL_PATH)/goodies/com.sonyericsson.system.xml:system/etc/permissions/com.sonyericsson.system.xml \
+		$(LOCAL_PATH)/goodies/com.sonymobile.mediacontent.xml:system/etc/permissions/com.sonymobile.mediacontent.xml
