@@ -331,7 +331,10 @@ PRODUCT_PACKAGES += \
 		contacts \
 		dialer \
 		keyboard \
-		deskclock
+		deskclock \
+		PixelThemeOverlay \
+		markup \
+		PixelNavBar
 
 # Extra Goodies
 PRODUCT_COPY_FILES += \
@@ -354,4 +357,6 @@ PRODUCT_COPY_FILES += \
 		$(LOCAL_PATH)/goodies/android.hardware.camera.manual_postprocessing.xml:system/etc/permissions/android.hardware.camera.manual_postprocessing.xml \
 		$(LOCAL_PATH)/goodies/android.hardware.camera.manual_sensor.xml:system/etc/permissions/android.hardware.camera.manual_sensor.xml \
 		$(LOCAL_PATH)/goodies/android.hardware.camera.raw.xml:system/etc/permissions/android.hardware.camera.raw.xml \
-		$(LOCAL_PATH)/goodies/android.hardware.camera.xml:system/etc/permissions/android.hardware.camera.xml
+		$(LOCAL_PATH)/goodies/android.hardware.camera.xml:system/etc/permissions/android.hardware.camera.xml \
+		$(LOCAL_PATH)/goodies/lib/libsketchology_native.so:system/lib/libsketchology_native.so \
+		$(LOCAL_PATH)/goodies/lib64/libsketchology_native.so:system/lib64/libsketchology_native.so
