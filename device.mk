@@ -359,6 +359,4 @@ PRODUCT_COPY_FILES += \
 		$(LOCAL_PATH)/goodies/android.hardware.camera.raw.xml:system/etc/permissions/android.hardware.camera.raw.xml \
 		$(LOCAL_PATH)/goodies/android.hardware.camera.xml:system/etc/permissions/android.hardware.camera.xml \
 		$(LOCAL_PATH)/goodies/lib/libsketchology_native.so:system/lib/libsketchology_native.so \
-		$(LOCAL_PATH)/goodies/lib64/libsketchology_native.so:system/lib64/libsketchology_native.so \
-		$(LOCAL_PATH)/goodies/PixelThemeOverlay.apk:system/vendor/overlay/Pixel/PixelThemeOverlay.apk \
-		$(LOCAL_PATH)/goodies/PixelNavBar.apk:system/vendor/overlay/Pixel/PixelNavBar.apk
+		$(LOCAL_PATH)/goodies/lib64/libsketchology_native.so:system/lib64/libsketchology_native.so
