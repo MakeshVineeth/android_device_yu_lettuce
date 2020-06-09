@@ -330,7 +330,8 @@ PRODUCT_PACKAGES += \
 		launcher \
 		contacts \
 		dialer \
-		keyboard
+		keyboard \
+		deskclock
 
 # Extra Goodies
 PRODUCT_COPY_FILES += \
