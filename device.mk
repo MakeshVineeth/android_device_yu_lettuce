@@ -346,4 +346,12 @@ PRODUCT_COPY_FILES += \
 		$(LOCAL_PATH)/goodies/com.sonymobile.mediacontent.jar:system/framework/com.sonymobile.mediacontent.jar \
 		$(LOCAL_PATH)/goodies/com.sony.device.xml:system/etc/permissions/com.sony.device.xml \
 		$(LOCAL_PATH)/goodies/com.sonyericsson.system.xml:system/etc/permissions/com.sonyericsson.system.xml \
-		$(LOCAL_PATH)/goodies/com.sonymobile.mediacontent.xml:system/etc/permissions/com.sonymobile.mediacontent.xml
+		$(LOCAL_PATH)/goodies/com.sonymobile.mediacontent.xml:system/etc/permissions/com.sonymobile.mediacontent.xml \
+		$(LOCAL_PATH)/goodies/android.hardware.camera.autofocus.xml:system/etc/permissions/android.hardware.camera.autofocus.xml \
+		$(LOCAL_PATH)/goodies/android.hardware.camera.flash-autofocus.xml:system/etc/permissions/android.hardware.camera.flash-autofocus.xml \
+		$(LOCAL_PATH)/goodies/android.hardware.camera.front.xml:system/etc/permissions/android.hardware.camera.front.xml \
+		$(LOCAL_PATH)/goodies/android.hardware.camera.full.xml:system/etc/permissions/android.hardware.camera.full.xml \
+		$(LOCAL_PATH)/goodies/android.hardware.camera.manual_postprocessing.xml:system/etc/permissions/android.hardware.camera.manual_postprocessing.xml \
+		$(LOCAL_PATH)/goodies/android.hardware.camera.manual_sensor.xml:system/etc/permissions/android.hardware.camera.manual_sensor.xml \
+		$(LOCAL_PATH)/goodies/android.hardware.camera.raw.xml:system/etc/permissions/android.hardware.camera.raw.xml \
+		$(LOCAL_PATH)/goodies/android.hardware.camera.xml:system/etc/permissions/android.hardware.camera.xml
