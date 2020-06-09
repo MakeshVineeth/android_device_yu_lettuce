@@ -161,12 +161,17 @@ ro.telephony.call_ring.multiple=false
 ro.config.always_show_roaming=true
 persist.vendor.data.mode=concurrent
 persist.radio.add_power_save=1
+persist.timed.enable=true
 
 # Media
 persist.media.treble_omx=false
 drm.service.enabled=1
 vidc.enc.narrow.searchrange=1
 mm.enable.sec.smoothstreaming=true
+persist.mm.enable.prefetch=true
+media.stagefright.thumbnail.prefer_hw_codecs=true
+mmp.enable.3g2=true
+media.aac_51_output_enabled=true
 
 # Perf
 ro.am.reschedule_service=true
@@ -413,3 +418,7 @@ ro.opa.eligible_device=true
 ro.wallpapers_loc_request_suw=true
 ro.com.google.ime.theme_id=5
 ro.boot.vendor.overlay.theme=com.google.android.theme.pixel,com.botty.android.theme.pixel
+
+net.bt.name=Android
+ro.vendor.qti.va_aosp.support=1
+ro.treble.enabled=true
