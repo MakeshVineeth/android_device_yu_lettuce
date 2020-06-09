@@ -19,7 +19,6 @@ ro.af.client_heap_size_kbyte=7168
 
 # Boot
 ro.build.shutdown_timeout=0
-sys.vendor.shutdown.waittime=500
 
 # Camera
 persist.camera.cpp.duplication=false
@@ -33,13 +32,7 @@ ro.bluetooth.hfp.ver=1.7
 ro.bluetooth.sap=true
 ro.qualcomm.bt.hci_transport=smd
 
-# Dalvik
-dalvik.vm.checkjni=false
-dalvik.vm.verify-bytecode=false
-persist.sys.purgeable_assets=1
-
 # Display
-ro.opengles.version=196608
 ro.sf.lcd_density=295
 
 # CloudFlare DNS
@@ -138,13 +131,9 @@ drm.service.enabled=1
 vidc.enc.narrow.searchrange=1
 mm.enable.sec.smoothstreaming=true
 persist.mm.enable.prefetch=true
-mmp.enable.3g2=true
-media.aac_51_output_enabled=true
 
 # Perf
-ro.am.reschedule_service=true
 ro.vendor.extension_library=libqti-perfd-client.so
-ro.vendor.qti.am.reschedule_service=true
 sys.use_fifo_ui=1
 
 # Wi-Fi
@@ -171,8 +160,6 @@ ring.delay = 0
 persist.sys.timezone=Asia/Kolkata
 
 # Old or Deprecated Tweaks Dump Lol
-ro.max.fling_velocity=12000
-ro.min.fling_velocity=8000
 ro.ril.enable.amr.wideband=1
 ro.config.hw_fast_dormancy=1
 logcat.live=disable
@@ -180,8 +167,6 @@ profiler.force_disable_err_rpt=1
 profiler.force_disable_ulog=1
 profiler.force_disable_ulog=true
 profiler.force_disable_err_rpt=true
-ro.HOME_APP_ADJ=1
-persist.android.strictmode=0
 net.tcp.buffersize.default=4096,87380,256960,4096,16384,256960
 net.tcp.buffersize.wifi=4096,87380,256960,4096,16384,256960
 net.tcp.buffersize.umts=4096,87380,256960,4096,16384,256960
@@ -211,6 +196,7 @@ ro.media.dec.aud.flac.enabled=1
 ro.media.dec.vid.H.264.enabled=1
 ro.media.enc.aud.flac.enabled=1
 ro.media.enc.vid.H.264.enabled=1
+
 net.ipv4.tcp_ecn=0
 net.ipv4.route.flush=1
 net.ipv4.tcp_rfc1337=1
@@ -224,23 +210,10 @@ net.ipv4.tcp_wmem=4096 39000 187000
 net.ipv4.tcp_mem=187000 187000 187000
 net.ipv4.tcp_no_metrics_save=1
 net.ipv4.tcp_moderate_rcvbuf=1
-net.ipv6.tcp_ecn=0
-net.ipv6.route.flush=1
-net.ipv6.tcp_rfc1337=1
-net.ipv6.ip_no_pmtu_disc=0
-net.ipv6.tcp_sack=1
-net.ipv6.tcp_fack=1
-net.ipv6.tcp_window_scaling=1
-net.ipv6.tcp_timestamps=1
-net.ipv6.tcp_rmem=4096 39000 187000
-net.ipv6.tcp_wmem=4096 39000 187000
-net.ipv6.tcp_mem=187000 187000 187000
-net.ipv6.tcp_no_metrics_save=1
-net.ipv6.tcp_moderate_rcvbuf=1
 
 # IPV4 Support
 persist.telephony.support.ipv4=1
-# 3G/4G Tweaks
+
 ro.ril.hsxpa=2
 ro.ril.hspa=2
 ro.ril.lte=2
@@ -268,8 +241,3 @@ debugtool.anrhistory=0
 profiler.debugmonitor=false
 profiler.launch=false
 profiler.hung.dumpdobugreport=false
-
-com.qc.hardware=1
-debug.qc.hardware=true
-debug.qctwa.preservebuf=1
-debug.qctwa.statusbar=1
