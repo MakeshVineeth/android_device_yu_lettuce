@@ -322,9 +322,8 @@ net.ipv6.tcp_wmem=4096 39000 187000
 net.ipv6.tcp_mem=187000 187000 187000
 net.ipv6.tcp_no_metrics_save=1
 net.ipv6.tcp_moderate_rcvbuf=1
-net.tethering.noprovisioning=true
-# IPV4 and IPV6 Support
-persist.telephony.support.ipv6=1
+
+# IPV4 Support
 persist.telephony.support.ipv4=1
 # 3G/4G Tweaks
 ro.ril.hsxpa=2
@@ -366,7 +365,6 @@ debugtool.anrhistory=0
 profiler.debugmonitor=false
 profiler.launch=false
 profiler.hung.dumpdobugreport=false
-ro.securestorage.knox=false
 ro.telephony.sms_segment_size=160
 ro.mot.eri.losalert.delay=1000
 
@@ -380,7 +378,6 @@ persist.camera.video.CDS=1
 persist.camera.HAL3.enabled=1
 persist.camera.is_type=5
 persist.camera.is_mode=5
-persist.camera.max.previewfps=60
 persist.camera.tnr_cds=1
 persist.camera.tnr.video=1
 persist.camera.tnr.preview=1
@@ -396,11 +393,9 @@ persist.vendor.camera.imglib.usefdlite=1
 persist.vendor.camera.tnr.cds=1
 persist.vendor.process.plates=1
 persist.vendor.process.plates=1
-persist.vendor.camera.eis.enable=1
 persist.vendor.camera.HAL3.enabled=1
 persist.vendor.camera.is_type=5
 persist.vendor.camera.is_mode=5
-persist.vendor.camera.max.previewfps=60
 persist.vendor.camera.tnr_cds=1
 persist.vendor.camera.tnr.video=1
 persist.vendor.camera.tnr.preview=1
@@ -414,5 +409,4 @@ persist.vendor.camera.video.CDS=1
 
 # Few more Pixel properties
 persist.audio.vr.enable=true
-ro.boot.vendor.overlay.theme=com.google.android.theme.pixel
 net.bt.name=Android
