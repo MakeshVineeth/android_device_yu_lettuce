@@ -262,7 +262,6 @@ media.stagefright.enable-http=true
 media.stagefright.enable-aac=true
 media.stagefright.enable-qcp=true
 media.stagefright.enable-record=true
-wifi.supplicant_scan_interval=120
 debug.sf.hw=1
 debug.performance.tuning=1
 debug.egl.profiler=1
