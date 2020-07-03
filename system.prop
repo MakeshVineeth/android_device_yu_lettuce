@@ -128,8 +128,6 @@ persist.data.qmi.adb_logmask=0
 persist.vendor.radio.apm_sim_not_pwdn=1
 ro.telephony.call_ring.multiple=false
 ro.config.always_show_roaming=true
-persist.vendor.data.mode=concurrent
-persist.timed.enable=true
 
 # Media
 persist.media.treble_omx=false
