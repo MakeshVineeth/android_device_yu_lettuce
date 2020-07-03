@@ -139,8 +139,10 @@ media.stagefright.thumbnail.prefer_hw_codecs=true
 mmp.enable.3g2=true
 
 # Perf
+ro.config.max_starting_bg=8
 ro.vendor.extension_library=libqti-perfd-client.so
 ro.vendor.qti.am.reschedule_service=true
+ro.sys.fw.bservice_enable=true
 ro.vendor.qti.sys.fw.bservice_enable=true
 sys.use_fifo_ui=1
 
@@ -169,7 +171,6 @@ persist.rcs.supported=1
 persist.sys.timezone=Asia/Kolkata
 
 # Old or Deprecated Tweaks Dump Lol
-ro.media.enc.jpeg.quality=100
 persist.cust.tel.eons=1
 ro.ril.enable.amr.wideband=1
 ro.config.hw_fast_dormancy=1
@@ -178,21 +179,11 @@ profiler.force_disable_err_rpt=1
 profiler.force_disable_ulog=1
 profiler.force_disable_ulog=true
 profiler.force_disable_err_rpt=true
-ro.HOME_APP_ADJ=1
 persist.android.strictmode=0
 com.qc.hardware=1
 debug.qc.hardware=true
 debug.qctwa.preservebuf=1
 debug.qctwa.statusbar=1
-debug.sf.hw=1
-debug.performance.tuning=1
-debug.egl.profiler=1
-debug.egl.hw=1
-debug.composition.type=gpu
-persist.sys.ui.hw=1
-video.accelerate.hw=1
-ro.config.disable.hw_accel=false
-force_hw_ui=true
 debugtool.anrhistory=0
 profiler.debugmonitor=false
 profiler.launch=false
