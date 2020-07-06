@@ -14,7 +14,7 @@
 
 LOCAL_PATH:= $(call my-dir)
 
-# Next Phone
+# Google Phone
 include $(CLEAR_VARS)
 LOCAL_MODULE := dialer
 LOCAL_SRC_FILES := app/$(LOCAL_MODULE).apk
@@ -81,7 +81,7 @@ LOCAL_PRIVILEGED_MODULE := true
 LOCAL_DEX_PREOPT := false
 include $(BUILD_PREBUILT)
 
-# Lawndesk
+# Lawnchair
 include $(CLEAR_VARS)
 LOCAL_MODULE := launcher
 LOCAL_SRC_FILES := app/$(LOCAL_MODULE).apk
