@@ -38,28 +38,6 @@ persist.hwc.ptor.enable=true
 debug.enable.sglscale=1
 ro.sf.lcd_density=295
 
-# CloudFlare DNS
-net.dns1=1.1.1.1
-net.dns2=1.0.0.1
-net.rmnet0.dns1=1.1.1.1
-net.rmnet0.dns2=1.0.0.1
-net.rmnet1.dns1=1.1.1.1
-net.rmnet1.dns2=1.0.0.1
-net.gprs.dns1=1.1.1.1
-net.gprs.dns2=1.0.0.1
-net.ppp0.dns1=1.1.1.1
-net.ppp0.dns2=1.0.0.1
-net.wlan0.dns1=1.1.1.1
-net.wlan0.dns2=1.0.0.1
-net.eth0.dns1=1.1.1.1
-net.eth0.dns2=1.0.0.1
-dhcp.eth0.dns1=1.1.1.1
-dhcp.eth0.dns2=1.0.0.1
-dhcp.wlan0.dns1=1.1.1.1
-dhcp.wlan0.dns2=1.0.0.1
-net.pdpbr1.dns1=1.1.1.1
-net.pdpbr1.dns2=1.0.0.1
-
 # Healthd
 ro.enable_boot_charger_mode=1
 
@@ -159,7 +137,6 @@ ro.config.nocheckin=1
 # Disables error checking.
 ro.kernel.android.checkjni=0
 ro.kernel.checkjni=0
-logcat.live=disable
 
 # Instant Calling
 ro.telephony.call_ring.delay = 0
@@ -170,3 +147,14 @@ persist.sys.timezone=Asia/Kolkata
 
 # Few more Pixel properties
 ro.boot.vendor.overlay.theme=com.google.android.theme.pixel
+
+DEVICE_PROVISIONED=1
+ro.opengles.version=196608
+persist.rcs.supported=1
+persist.cust.tel.eons=1
+ro.ril.enable.amr.wideband=1
+ro.config.hw_fast_dormancy=1
+ro.HOME_APP_ADJ=1
+persist.vendor.data.mode=concurrent
+persist.timed.enable=true
+persist.radio.add_power_save=1
