@@ -158,3 +158,4 @@ ro.HOME_APP_ADJ=1
 persist.vendor.data.mode=concurrent
 persist.timed.enable=true
 persist.radio.add_power_save=1
+persist.radio.apm_sim_not_pwdn=1
