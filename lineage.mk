@@ -71,4 +71,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.bootmode="unknown" \
     ro.boot.mode="unknown" \
     ro.build.selinux=0 \
-    ro.build.type="user"
+    ro.build.type="user" \
+    ro.build.description="bonito-user 10 QQ3A.200705.002 6506677 release-keys" \
+    ro.build.version.security_patch=2020-07-05
