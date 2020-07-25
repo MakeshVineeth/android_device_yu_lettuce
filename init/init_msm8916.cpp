@@ -112,4 +112,5 @@ void vendor_load_properties()
 
     property_override("ro.build.version.security_patch", "2020-07-05");
     property_override("ro.bootimage.build.fingerprint", fp);
+    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/bonito/bonito:10/QQ3A.200705.002/6506677:user/release-keys");
 }
