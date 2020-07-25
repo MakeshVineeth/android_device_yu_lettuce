@@ -103,7 +103,7 @@ void vendor_load_properties()
 {
     init_target_properties();
     init_alarm_boot_properties();
-    string fp = "google/coral/coral:10/QQ3A.200705.002/6506677:user/release-keys";
+    string fp = "google/bonito/bonito:10/QQ3A.200705.002/6506677:user/release-keys";
     string prop_partitions[] = { "", "odm.", "product.", "system.", "vendor." };
 
     for (const string &prop : prop_partitions) {

@@ -51,11 +51,10 @@ DISABLE_EAP_PROXY := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-micromax
 
-BUILD_FINGERPRINT := google/coral/coral:10/QQ3A.200705.002/6506677:user/release-keys
+BUILD_FINGERPRINT := google/bonito/bonito:10/QQ3A.200705.002/6506677:user/release-keys
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT=$(BUILD_FINGERPRINT) \
 	BUILD_VERSION_SECURITY_PATCH=2020-07-05 \
-    PRIVATE_BUILD_DESC="coral-user 10 QQ3A.200705.002 6506677 release-keys" \
-    BUILD_TYPE="user" \
-    BUILD_FLAVOR="coral-user"
+    PRIVATE_BUILD_DESC="bonito-user 10 QQ3A.200705.002 6506677 release-keys" \
+    BUILD_TYPE="user"
