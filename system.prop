@@ -159,3 +159,5 @@ persist.vendor.data.mode=concurrent
 persist.timed.enable=true
 persist.radio.add_power_save=1
 persist.radio.apm_sim_not_pwdn=1
+pm.sleep_mode=1
+ro.ril.disable.power.collapse=1
