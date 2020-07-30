@@ -176,18 +176,14 @@ persist.sys.timezone=Asia/Kolkata
 ro.boot.vendor.overlay.theme=com.google.android.theme.pixel
 
 DEVICE_PROVISIONED=1
-ro.opengles.version=196608
 persist.rcs.supported=1
 persist.cust.tel.eons=1
 ro.ril.enable.amr.wideband=1
 ro.config.hw_fast_dormancy=1
-ro.HOME_APP_ADJ=1
 persist.vendor.data.mode=concurrent
 persist.timed.enable=true
 persist.radio.add_power_save=1
 persist.radio.apm_sim_not_pwdn=1
-pm.sleep_mode=1
-ro.ril.disable.power.collapse=1
 
 # Dalvik
 dalvik.vm.checkjni=false
