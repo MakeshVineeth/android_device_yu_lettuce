@@ -145,9 +145,6 @@ ring.delay = 0
 # Defaults
 persist.sys.timezone=Asia/Kolkata
 
-# Few more Pixel properties
-ro.boot.vendor.overlay.theme=com.google.android.theme.pixel
-
 DEVICE_PROVISIONED=1
 persist.rcs.supported=1
 persist.cust.tel.eons=1
