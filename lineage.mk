@@ -79,3 +79,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.type=user \
     ro.build.description=coral-user 10 QQ3A.200805.001 6578210 release-keys \
     ro.build.version.security_patch=2020-08-05
+
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+	ro.build.fingerprint=$(BUILD_FINGERPRINT) \
+    ro.build.version.security_patch=2020-08-05
