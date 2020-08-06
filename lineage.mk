@@ -51,14 +51,14 @@ DISABLE_EAP_PROXY := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-micromax
 
-BUILD_FINGERPRINT := google/coral/coral:10/QQ3A.200805.001/6578210:user/release-keys
+BUILD_FINGERPRINT := google/bonito/bonito:10/QQ3A.200805.001/6578210:user/release-keys
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT=$(BUILD_FINGERPRINT) \
 	BUILD_VERSION_SECURITY_PATCH="2020-08-05" \
     VENDOR_BUILD_FINGERPRINT=$(BUILD_FINGERPRINT) \
     SYSTEM_BUILD_FINGERPRINT=$(BUILD_FINGERPRINT) \
-    PRIVATE_BUILD_DESC="coral-user 10 QQ3A.200805.001 6578210 release-keys" \
+    PRIVATE_BUILD_DESC="bonito-user 10 QQ3A.200805.001 6578210 release-keys" \
     BUILD_TYPE=user \
     PRODUCT_NAME=YUPHORIA \
     TARGET_DEVICE=YUPHORIA \
@@ -77,7 +77,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.boot.mode=unknown \
     ro.build.selinux=0 \
     ro.build.type=user \
-    ro.build.description=coral-user 10 QQ3A.200805.001 6578210 release-keys \
+    ro.build.description=bonito-user 10 QQ3A.200805.001 6578210 release-keys \
     ro.build.version.security_patch=2020-08-05
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \

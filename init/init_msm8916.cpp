@@ -110,7 +110,7 @@ void vendor_load_properties()
 {
     init_target_properties();
     init_alarm_boot_properties();
-    string fp = "google/coral/coral:10/QQ3A.200805.001/6578210:user/release-keys";
+    string fp = "google/bonito/bonito:10/QQ3A.200805.001/6578210:user/release-keys";
     string prop_partitions[] = { "", "odm.", "product.", "system.", "vendor." };
 
     for (const string &prop : prop_partitions) {
@@ -119,5 +119,5 @@ void vendor_load_properties()
 
     property_override("ro.build.version.security_patch", "2020-08-05");
     property_override("ro.bootimage.build.fingerprint", fp);
-    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/coral/coral:10/QQ3A.200805.001/6578210:user/release-keys");
+    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/bonito/bonito:10/QQ3A.200805.001/6578210:user/release-keys");
 }
