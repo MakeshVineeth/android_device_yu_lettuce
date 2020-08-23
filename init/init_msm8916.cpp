@@ -70,13 +70,6 @@ void property_override(string prop, string value)
         __system_property_add(prop.c_str(), prop.size(), value.c_str(), value.size());
 }
 
-void property_override_dual(char const system_prop[], char const vendor_prop[],
-    char const value[])
-{
-    property_override(system_prop, value);
-    property_override(vendor_prop, value);
-}
-
 static void init_alarm_boot_properties()
 {
     char const *boot_reason_file = "/proc/sys/kernel/boot_reason";
@@ -110,7 +103,7 @@ void vendor_load_properties()
 {
     init_target_properties();
     init_alarm_boot_properties();
-    string fp = "google/bonito/bonito:10/QQ3A.200805.001/6578210:user/release-keys";
+    string fp = "google/coral/coral:10/QQ3A.200805.001/6578210:user/release-keys";
     string prop_partitions[] = { "", "odm.", "product.", "system.", "vendor." };
 
     for (const string &prop : prop_partitions) {
@@ -119,5 +112,4 @@ void vendor_load_properties()
 
     property_override("ro.build.version.security_patch", "2020-08-05");
     property_override("ro.bootimage.build.fingerprint", fp);
-    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/bonito/bonito:10/QQ3A.200805.001/6578210:user/release-keys");
 }
